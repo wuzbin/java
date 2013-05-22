@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>zookeeper.znode.parent</name>
+        <value>/hbase-69</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>zookeeper.quorum97,zookeeper.quorum98,zookeeper.quorum98</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.property.clientPort</name>
+        <value>3181</value>
+    </property>
+    <property>
+        <name>hbase.client.scanner.caching</name>
+        <value>500</value>
+    </property>
+    <property>
+        <name>hbase.client.pause</name>
+        <value>100</value>
+    </property>
+    <property>
+        <name>hbase.client.retries.number</name>
+        <value>5</value>
+    </property>
+    <property>
+        <name>hbase.ipc.client.tcpnodelay</name>
+        <value>true</value>
+    </property>
+</configuration>

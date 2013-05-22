@@ -1,9 +1,7 @@
 package com.test.zookeeper;
 
 import org.apache.zookeeper.*;
-import org.apache.zookeeper.data.Id;
 
-import javax.jms.BytesMessage;
 import java.io.IOException;
 
 /**
@@ -14,8 +12,8 @@ import java.io.IOException;
  * To change this template use File | Settings | File Templates.
  */
 public class ZooKeeperTest {
-    private static Watcher watcher = new MyWatcher();
-    private static ZooKeeper getZooKeeper() {
+    public static Watcher watcher = new MyWatcher();
+    public static ZooKeeper getZooKeeper() {
         try {
             ZooKeeper zooKeeper =  new ZooKeeper("zookeeper.quorum97:3181,zookeeper.quorum98:3181,zookeeper.quorum99:3181", 60000, watcher);
             return zooKeeper;
