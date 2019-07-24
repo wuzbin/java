@@ -20,6 +20,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class InternalApiTest {
 
     private static List<Long> times = new ArrayList<Long>();
+
     private static SortedMap<Long, Integer> statis = new TreeMap<Long, Integer>();
     public static void main(String[] args){
         if (args.length < 1) {
@@ -27,6 +28,7 @@ public class InternalApiTest {
             System.out.println("java -cp java-1.0-SNAPSHOT.jar  com.test.internalapi.InternalApiTest filePath");
             System.exit(1);
         }
+
         String fileName = args[0];
         int c = 10;
         if (args.length == 2) {

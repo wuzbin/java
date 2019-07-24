@@ -8,6 +8,7 @@ package com.test.thread;
  * To change this template use File | Settings | File Templates.
  */
 public class InterruptTest {
+
     public static Thread t1 = new Thread(new Runnable() {
         @Override
         public void run() {
