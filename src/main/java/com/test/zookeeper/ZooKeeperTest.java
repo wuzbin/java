@@ -32,11 +32,14 @@ public class ZooKeeperTest {
         } catch (InterruptedException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
-        while (true) {
+        Long loopCount = 1000L;
+        while (loopCount > 0) {
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            } finally {
+                loopCount--;
             }
         }
     }
