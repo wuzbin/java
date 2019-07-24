@@ -11,7 +11,6 @@ import org.apache.zookeeper.Watcher;
  * To change this template use File | Settings | File Templates.
  */
 public class MyWatcher implements Watcher{
-    @Override
     public void process(WatchedEvent watchedEvent) {
         System.out.println(watchedEvent.getType());
         System.out.println(watchedEvent.getState());
