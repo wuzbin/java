@@ -18,6 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * To change this template use File | Settings | File Templates.
  */
 public class InternalApiTest {
+
     private static List<Long> times = new ArrayList<Long>();
 
     private static SortedMap<Long, Integer> statis = new TreeMap<Long, Integer>();
